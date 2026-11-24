@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paws & Claws Care Guide</title>
+  <style>
+    body {
+      font-family: Poppins, Montserrat, Arial, sans-serif;
+      background-color: ivory;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: gold;
+      padding: 15px;
+      border-bottom: solid orange;
+      overflow: hidden;
+    }
+    .header-left {
+      float: left;
+    }
+    .header-left h3 {
+      margin: 0;
+    }
+    .header-left p {
+      margin: 4px 0 0 0;
+      font-size: 13px;
+    }
+    nav {
+      float: right;
+      margin-top: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .banner {
+      background-color: khaki;
+      text-align: center;
+      padding: 30px;
+      border-bottom: solid orange;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+    .box {
+      display: inline-block;
+      vertical-align: top;
+      width: 250px;
+      background-color: white;
+      border: solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      text-align: left;
+    }
+    .box a, .next-btn {
+      display: inline-block;
+      background-color: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 8px;
+    }
+    .content {
+      margin: 25px;
+    }
+    .info-box {
+      background-color: white;
+      border: solid gold;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .safe-box {
+      background-color: honeydew;
+      border: solid green;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .toxic-box {
+      background-color: mistyrose;
+      border: solid red;
+      padding: 15px;
+    }
+    footer {
+      background-color: gold;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      border-top: solid orange;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <h3>🐾 Paws & Claws</h3>
+      <p>Members: Mendoza (Leader), Rai, Santos (Reena), Santos (Elijah)</p>
+    </div>
+    <nav>
+      <a href="#" onclick="showPage1()">Home</a> |
+      <a href="#" onclick="showPage2()">Nutrition</a> |
+      <a href="#" onclick="showPage3()">Grooming</a> |
+      <a href="#" onclick="showPage4()">Health</a>
+    </nav>
+  </header>
+
+  <!-- PAGE 1 -->
+  <div id="page1" style="display: block;">
+    <div class="banner">
+      <h1>Happy Pets, Happy Homes</h1>
+      <p>Educating first-time pet owners, student pet lovers, and families on proper pet nutrition, basic grooming, and health tracking in our community.</p>
+    </div>
+
+    <div class="container">
+      <h2>Explore Our Pet Care Guides</h2>
+
+      <div class="box">
+        <h3>🥣 Nutrition Guides</h3>
+        <p>Learn which foods are safe and toxic for your dogs and cats.</p>
+        <ul>
+          <li>Safe vs. Toxic Foods</li>
+          <li>Healthy feeding tips</li>
+          <li>Fresh water habits</li>
+        </ul>
+        <a href="#" onclick="showPage2()">Next Page: Nutrition</a>
+      </div>
+
+      <div class="box">
+        <h3>✂️ Basic Grooming</h3>
+        <p>Simple hygiene routines to keep your pets clean and healthy.</p>
+        <ul>
+          <li>Bathing & Brushing Tips</li>
+          <li>Nail trimming guide</li>
+          <li>Ear & dental care</li>
+        </ul>
+        <a href="#" onclick="showPage3()">Read More</a>
+      </div>
+
+      <div class="box">
+        <h3>🩺 Health Tracker</h3>
+        <p>Check vaccine schedules and critical emergency warning signs.</p>
+        <ul>
+          <li>Vaccine Check Schedules</li>
+          <li>Deworming reminders</li>
+          <li>Emergency health signs</li>
+        </ul>
+        <a href="#" onclick="showPage4()">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="page2" style="display: none; background-color: lightyellow; padding-bottom: 15px;">
+    <div class="content">
+      <h1 style="text-align: center;">Nutrition and Diet Guide</h1>
+
+      <div class="info-box" style="border-left: thick solid orange; border-top: none; border-right: none; border-bottom: none;">
+        <h2>Safe vs. Toxic Foods</h2>
+        <p>Always check what you feed your pets. Some human foods are healthy, while others are very dangerous.</p>
+      </div>
+
+      <div class="safe-box">
+        <h3 style="color: green;">Safe Foods for Pets</h3>
+        <ul>
+          <li>Plain boiled chicken (no bones or salt)</li>
+          <li>Carrots and cucumber slices</li>
+          <li>Cooked pumpkin and plain rice</li>
+          <li>Seedless apple slices and bananas</li>
+          <li>Clean, fresh drinking water</li>
+        </ul>
+      </div>
+
+      <div class="toxic-box">
+        <h3 style="color: red;">Toxic Foods to Avoid</h3>
+        <ul>
+          <li>Chocolate and coffee</li>
+          <li>Grapes and raisins</li>
+          <li>Onions, garlic, and chives</li>
+          <li>Cooked bones (can splinter)</li>
+          <li>Candies with Xylitol</li>
+        </ul>
+      </div>
+
+      <p style="margin-top: 25px;">
+        <a href="#" onclick="showPage3()" class="next-btn">Next Page: Grooming Guide</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div id="page3" style="display: none; background-color: lightyellow; padding-bottom: 15px;">
+    <div class="content">
+      <h1 style="text-align: center;">Basic Grooming and Hygiene</h1>
+
+      <div class="info-box">
+        <h2>Bathing and Brushing Tips</h2>
+        <p>Regular grooming keeps your pet's coat clean and helps you check for ticks and fleas.</p>
+        <ul>
+          <li>Brush short-haired pets weekly and long-haired pets every other day.</li>
+          <li>Bathe dogs every few weeks using mild pet shampoo.</li>
+          <li>Dry your pet properly with a clean towel after bathing.</li>
+        </ul>
+        <img src="petgrooming.jpg" alt="Dog getting bathed and groomed" style="width: 300px; display: block; margin-top: 15px;">
+      </div>
+
+      <div class="info-box">
+        <h2>Nail, Ear and Dental Care</h2>
+        <ul>
+          <li><strong>Nails:</strong> Trim only the clear tips of the nails once a month.</li>
+          <li><strong>Ears:</strong> Gently wipe the outer ears with a damp cotton pad weekly.</li>
+          <li><strong>Teeth:</strong> Brush teeth regularly using pet toothpaste.</li>
+        </ul>
+      </div>
+
+      <p style="margin-top: 25px;">
+        <a href="#" onclick="showPage4()" class="next-btn">Next Page: Health Tracker</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div id="page4" style="display: none; background-color: lightyellow; padding-bottom: 15px;">
+    <div class="content">
+      <h1 style="text-align: center;">Health Tracker and Vaccination Check</h1>
+
+      <div class="info-box">
+        <h2>Vaccine Check Schedule</h2>
+        <p>Select your pet's current vaccination stage:</p>
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 8px;"><input type="radio" name="vaccine"> <strong>Puppy or Kitten Stage:</strong> First Core Vaccine and Deworming</li>
+          <li style="margin-bottom: 8px;"><input type="radio" name="vaccine"> <strong>Follow-up Visit:</strong> Second Booster Shot and Deworming</li>
+          <li style="margin-bottom: 8px;"><input type="radio" name="vaccine"> <strong>Young Adult Stage:</strong> Final Booster and Anti-Rabies Vaccine</li>
+          <li style="margin-bottom: 8px;"><input type="radio" name="vaccine"> <strong>Yearly Routine:</strong> Annual Booster and Vet Checkup</li>
+        </ul>
+      </div>
+
+      <div class="toxic-box">
+        <h3 style="color: red;">Critical Signs of a Pet Health Emergency</h3>
+        <p>Bring your pet to the vet right away if you see these signs:</p>
+        <ul>
+          <li>Difficulty breathing or pale gums</li>
+          <li>Repeated vomiting or bloody diarrhea</li>
+          <li>Sudden collapse, seizures, or weakness</li>
+          <li>Swollen, hard, or painful stomach</li>
+          <li>Eating chocolate, rat poison, or toxic foods</li>
+        </ul>
+      </div>
+
+      <p style="margin-top: 25px;">
+        <a href="#" onclick="showPage1()" class="next-btn">Back to Home Page</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Paws & Claws Care Guide</strong> - Sta. Elena High School</p>
+    <p>Members: Mendoza (Leader), Rai, Santos (Reena), Santos (Elijah)</p>
+  </footer>
+
+  <script>
+    function showPage1() {
+      document.getElementById("page1").style.display = "block";
+      document.getElementById("page2").style.display = "none";
+      document.getElementById("page3").style.display = "none";
+      document.getElementById("page4").style.display = "none";
+    }
+
+    function showPage2() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "block";
+      document.getElementById("page3").style.display = "none";
+      document.getElementById("page4").style.display = "none";
+    }
+
+    function showPage3() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "none";
+      document.getElementById("page3").style.display = "block";
+      document.getElementById("page4").style.display = "none";
+    }
+
+    function showPage4() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "none";
+      document.getElementById("page3").style.display = "none";
+      document.getElementById("page4").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
